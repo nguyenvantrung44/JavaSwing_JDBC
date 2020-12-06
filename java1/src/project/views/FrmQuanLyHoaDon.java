@@ -1,6 +1,3 @@
-/**
- * Người làm: Nguyen Van Trung
- */
 package project.views;
 
 import java.awt.Color;

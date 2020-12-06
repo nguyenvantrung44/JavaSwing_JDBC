@@ -153,24 +153,6 @@ public class SanPhamDAO {
 		return check;
 	}
 
-	public SanPhamDTO kiemtraSanPhamtrongNCC(String maNCC) throws ClassNotFoundException, SQLException {
-		SanPhamDTO dto = null;
-		try {
-			conn = MyConnection.getConnection();
-			String sql = "Select top 1 MaSP from SanPham where MaNCC LIKE ?";
-			preStm = conn.prepareStatement(sql);
-			preStm.setString(1, maNCC);
-			rs = preStm.executeQuery();
-			if (rs.next()) {
-				String maSP = rs.getString("MaSP");
-				dto = new SanPhamDTO(maSP);
-			}
-		} finally {
-			closeConnection();
-		}
-		return dto;
-	}
-
 	public boolean xoatatcaSanPhamcuaNCC(String maNCC) throws ClassNotFoundException, SQLException {
 		boolean check = false;
 		try {

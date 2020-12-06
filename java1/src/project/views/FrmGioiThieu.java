@@ -1,8 +1,3 @@
-/*
- * Người làm : Nguyễn Văn Trung
- * Chức năng : Màn hình giới thiệu của chương trình
- * 
- * */
 package project.views;
 
 import java.awt.EventQueue;
@@ -32,19 +27,19 @@ public class FrmGioiThieu extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					FrmGioiThieu frame = new FrmGioiThieu();
-					frame.setVisible(true);
-					frame.setLocationRelativeTo(null);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
+//	public static void main(String[] args) {
+//		EventQueue.invokeLater(new Runnable() {
+//			public void run() {
+//				try {
+//					FrmGioiThieu frame = new FrmGioiThieu();
+//					frame.setVisible(true);
+//					frame.setLocationRelativeTo(null);
+//				} catch (Exception e) {
+//					e.printStackTrace();
+//				}
+//			}
+//		});
+//	}
 
 	/**
 	 * Create the frame.

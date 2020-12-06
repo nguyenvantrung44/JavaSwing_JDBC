@@ -395,17 +395,4 @@ public class HoaDonDAO {
 		return check;
 	}
 
-	public boolean xoatatcaHoaDontrongKhuyenMai(String maKM) throws ClassNotFoundException, SQLException {
-		boolean check = false;
-		try {
-			conn = MyConnection.getConnection();
-			String sql = "Delete from HoaDon where MaKM = ?";
-			preStm = conn.prepareStatement(sql);
-			preStm.setString(1, maKM);
-			check = preStm.executeUpdate() > 0;
-		} finally {
-			closeConnection();
-		}
-		return check;
-	}
 }
